@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Welcome</a>
+        <a href="household.html">House</a>
+        <a href="Flight.html">Flights</a>
+        <a href="car.html">Cars</a>
+        <a href="bike.html">Bike</a>
+        <a href="bus&rails.html">Bus & Rails</a>
+        <a href="secondary.html">Secondary</a>
+        <a href="result.html" class="active">Result</a>
+    </nav>
+
+    <div id="sec">
+
+    <div class="container2">
+        <h2>Result</h2> <br><br>
+
+        <h3>Your (CO2) carbon footprint per month is:</h3>
+        <br>
+
+        <h3 id="total_result">-- metric tons</h3>
+        <br><br><br>
+        
+        <a href="#suggestion" id="sug-btn" class="cssbuttons-io-button" onclick="show_suggestion()">Click for Suggestions
+            <div class="icon">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"> </path>
+                </svg>
+                </div>
+            </a>
+        </div>      
+    </div>
+        <br><br>
+
+        <section id="suggestion"><h2>Suggestions</h2><br><br>
+            <ul>
+                <li>Reduce energy use - <br>
+                    ~ Use renewable energy sources like solar, wind, or tidal power </li><br>
+                <li>Reduce waste - <br>
+                    ~ Recycle everything you can<br>
+                    ~ Choose products with less packaging<br>
+                    ~ Reuse items or donate them instead of throwing them away</li><br>
+                <li>Reduce, reuse, repair and recycle</li><br>
+                <li>Switch to an electric vehicle</li><br>
+                <li>Walk, bike or take public transport</li><br>
+            </ul>
+        </section>
+
+        <script src="result.js" defer></script>
+</body>
+</html>

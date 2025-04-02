@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Welcome</a>
+        <a href="household.html">House</a>
+        <a href="Flight.html">Flights</a>
+        <a href="car.html">Cars</a>
+        <a href="bike.html">Bike</a>
+        <a href="bus&rails.html">Bus & Rails</a>
+        <a href="secondary.html" class="active">Secondary</a>
+        <a href="result.html">Result</a>
+    </nav>
+
+    <h2 id="sec-head">Secondary</h2> <br><br>
+    
+    
+    <div id="secondary">
+
+        <label for="Number of people">The number of people in your household :</label>
+        <input type="number" id="people" placeholder=" ">
+
+    <br><br>
+
+    <div id="sec2">
+    <div class="container4">
+
+
+        <span>
+        <label>Food and drink products<br>
+            <input type="number" class="INR" placeholder=" " readonly>
+            <select class="per">
+                <option value="1">per month</option>
+            </select></span>
+        </label>
+        <br><br>
+        <label>Pharmaceuticals         <br>
+            <input type="number" class="INR" placeholder=" " readonly>
+            <select class="per">
+                <option value="1">per month</option>
+            </select></label>
+        <br><br>
+        <label>Clothes, textiles and shoes<br><input type="number" class="INR" placeholder=" " readonly>
+            <select class="per">
+                <option value="1">per month</option>
+            </select>
+            </select></label>
+        <br><br>
+        <label>Paper based products (e.g. books, magazines, newspapers) <br><input type="number" class="INR" placeholder=" " readonly>
+            <select class="per">
+                <option value="1">per month</option>
+            </select>
+            </select>
+        </label>
+        <!--<br><br>
+        <label>Motor vehicles (not including fuel costs)<br><input type="number" class="INR" placeholder=" "> 
+            <select class="per">
+                <option value="1">per month</option>
+                <option value="2">per year</option>
+            </select></label> -->
+
+        </div>
+        <div class="container4">
+        <label>Telephone, mobile/cell phone call costs <br><input type="number" class="INR" placeholder=" " readonly> 
+            <select class="per">
+                <option value="1">per month</option>
+            </select></label>
+        <br><br>
+
+        <label>Computers and IT equipment<br> <input type="number" class="INR" placeholder=" " readonly>
+            <select class="per">
+                <option value="1">per month</option>
+            </select>
+            </select></label>
+        <br><br>
+        <label>Television, radio and phone (equipment) <br><input type="number" class="INR" placeholder=" " readonly>
+            <select class="per">
+                <option value="1">per month</option>
+            </select></label>
+
+        <br><br>
+        <!-- <label>Insurance <br> <input type="number" class="INR" placeholder=" ">
+            <select class="per">
+                <option value="1">per month</option>
+                <option value="2">per year</option>
+            </select></label> -->
+        <label>Recreational, cultural and sporting activities<br> <input type="number" class="INR" placeholder=" " readonly> 
+            <select class="per">
+                <option value="1">per month</option>
+            </select></label>
+    </div>
+</div>
+
+<button class="outputclick" onclick="displaySecondary()"><span>
+    Calculate Secondary Footprint
+  </span></button> <br> 
+
+<h3 id="output6"></h3>
+
+<br>
+        
+        <a href="result.html" id="next" class="cssbuttons-io-button">Result
+            <div class="icon">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"> </path>
+                </svg>
+                </div>
+            </a>
+    </div>
+
+    <script src="result.js" defer></script>
+
+</body>
+</html>

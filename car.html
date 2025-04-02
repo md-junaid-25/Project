@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Welcome</a>
+        <a href="household.html">House</a>
+        <a href="Flight.html">Flights</a>
+        <a href="car.html" class="active">Cars</a>
+        <a href="bike.html">Bike</a>
+        <a href="bus&rails.html">Bus & Rails</a>
+        <a href="secondary.html">Secondary</a>
+        <a href="result.html">Result</a>
+    </nav>
+
+    <div id="sec">
+
+    <div class="container2">
+        <h2>Car</h2> <br><br>
+        
+        <label for="mileage">Mileage:</label>
+        <input type="number" id="mileage1" placeholder=" ">
+
+        <label for="units"></label>
+        <select id="units">
+            <option value="1">km</option>
+        </select>
+
+        <br>
+
+        <button class="outputclick" onclick="displayCar()"><span>
+            Calculate Car Footprint
+          </span></button> <br> 
+
+        <h3 id="output3"></h3>
+        
+        <br>
+        <a href="bike.html" onclick="car()" class="cssbuttons-io-button">Bike
+            <div class="icon">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"> </path>
+                </svg>
+                </div>
+            </a>
+    </div>
+
+    </div>
+    <script src="result.js" defer></script>
+</body>
+</html>

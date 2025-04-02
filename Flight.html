@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Welcome</a>
+        <a href="household.html">House</a>
+        <a href="Flight.html" class="active">Flights</a>
+        <a href="car.html">Cars</a>
+        <a href="bike.html">Bike</a>
+        <a href="bus&rails.html">Bus & Rails</a>
+        <a href="secondary.html">Secondary</a>
+        <a href="result.html">Result</a>
+    </nav>
+
+    <div id="sec">
+
+    <div class="container2">
+        <h2>Flights</h2> <br><br>
+        
+       <!--  <label for="fromair">From:</label>
+        <select name="airports" id="fromairports">
+            <option value="DEL">Delhi - Indira Gandhi International Airport (DEL)</option>
+            <option value="BOM">Mumbai - Chhatrapati Shivaji Maharaj International Airport (BOM)</option>
+            <option value="BLR">Bengaluru - Kempegowda International Airport (BLR)</option>
+            <option value="MAA">Chennai - Chennai International Airport (MAA)</option>
+            <option value="HYD">Hyderabad - Rajiv Gandhi International Airport (HYD)</option>
+            <option value="CCU">Kolkata - Netaji Subhas Chandra Bose International Airport (CCU)</option>
+            <option value="AMD">Ahmedabad - Sardar Vallabhbhai Patel International Airport (AMD)</option>
+            <option value="GOI">Goa - Dabolim Airport (GOI)</option>
+            <option value="COK">Kochi - Cochin International Airport (COK)</option>
+            <option value="PNQ">Pune - Pune International Airport (PNQ)</option>
+            <option value="JAI">Jaipur - Jaipur International Airport (JAI)</option>
+            <option value="ATQ">Amritsar - Sri Guru Ram Dass Jee International Airport (ATQ)</option>
+            <option value="IXC">Chandigarh - Chandigarh Airport (IXC)</option>
+            <option value="IXB">Bagdogra - Bagdogra Airport (IXB)</option>
+            <option value="TRV">Thiruvananthapuram - Trivandrum International Airport (TRV)</option>
+            <option value="IXJ">Jammu - Jammu Airport (IXJ)</option>
+            <option value="IDR">Indore - Devi Ahilya Bai Holkar Airport (IDR)</option>
+            <option value="LKO">Lucknow - Chaudhary Charan Singh International Airport (LKO)</option>
+            <option value="GAU">Guwahati - Lokpriya Gopinath Bordoloi International Airport (GAU)</option>
+            <option value="IXM">Madurai - Madurai Airport (IXM)</option>
+          </select>
+          
+
+        <label for="toair">To:</label>
+        <select name="airports" id="toairports">
+            <option value="DEL">Delhi - Indira Gandhi International Airport (DEL)</option>
+            <option value="BOM">Mumbai - Chhatrapati Shivaji Maharaj International Airport (BOM)</option>
+            <option value="BLR">Bengaluru - Kempegowda International Airport (BLR)</option>
+            <option value="MAA">Chennai - Chennai International Airport (MAA)</option>
+            <option value="HYD">Hyderabad - Rajiv Gandhi International Airport (HYD)</option>
+            <option value="CCU">Kolkata - Netaji Subhas Chandra Bose International Airport (CCU)</option>
+            <option value="AMD">Ahmedabad - Sardar Vallabhbhai Patel International Airport (AMD)</option>
+            <option value="GOI">Goa - Dabolim Airport (GOI)</option>
+            <option value="COK">Kochi - Cochin International Airport (COK)</option>
+            <option value="PNQ">Pune - Pune International Airport (PNQ)</option>
+            <option value="JAI">Jaipur - Jaipur International Airport (JAI)</option>
+            <option value="ATQ">Amritsar - Sri Guru Ram Dass Jee International Airport (ATQ)</option>
+            <option value="IXC">Chandigarh - Chandigarh Airport (IXC)</option>
+            <option value="IXB">Bagdogra - Bagdogra Airport (IXB)</option>
+            <option value="TRV">Thiruvananthapuram - Trivandrum International Airport (TRV)</option>
+            <option value="IXJ">Jammu - Jammu Airport (IXJ)</option>
+            <option value="IDR">Indore - Devi Ahilya Bai Holkar Airport (IDR)</option>
+            <option value="LKO">Lucknow - Chaudhary Charan Singh International Airport (LKO)</option>
+            <option value="GAU">Guwahati - Lokpriya Gopinath Bordoloi International Airport (GAU)</option>
+            <option value="IXM">Madurai - Madurai Airport (IXM)</option>
+          </select> -->
+          
+
+        <label for="class">Class:</label>
+        <select id="class">
+            <option value="1">Economy Class</option>
+            <option value="2">First Class</option>
+            <option value="3">Business Class</option>
+        </select>
+
+        <label for="trips">Number of Trips:</label>
+        <input type="number" id="trips" placeholder=" ">
+
+        <button class="outputclick" onclick="displayFlight()"><span>
+            Calculate Flight Footprint
+          </span></button> <br> 
+
+        <h3 id="output2"></h3>
+        
+        <br>
+        <a href="car.html" onclick="flights()" class="cssbuttons-io-button">Car
+            <div class="icon">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"> </path>
+                </svg>
+                </div>
+            </a>
+    </div>
+
+    </div>
+
+    <script src="result.js" defer></script>
+</body>
+</html>
